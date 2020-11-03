@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+
+    background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/* 
+==========================
+Container
+========================== 
+*/
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* 
+==========================
+Header
+========================== 
+*/
+
+.header {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid #515369;
+}
+
+/* 
+==========================
+Nav
+========================== 
+*/
+
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.nav__link {
+    margin-left: 50px;
+
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;
+    transition: opacity .1s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/* 
+==========================
+Intro
+========================== 
+*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 750px;
+    padding-top: 100px;
+
+    background: #313550 url(../img/header/intro-bg.jpg) no-repeat center / cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+
+    line-height: 1.1;
+}
+
+.intro__subtitle {
+    color: #fff;
+    font-size: 22px;
+    font-weight: normal;
+    
+    margin-top: 30px;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+/* 
+==========================
+Button
+========================== 
+*/
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 14px 40px;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear;
+}
+
+.button--red {
+    background-color: #e84545;
+}
+
+.button--red:hover {
+    background-color: #c93131;
+}
