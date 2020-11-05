@@ -159,6 +159,7 @@ Button
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 
     transition: background .1s linear;
 }
@@ -169,6 +170,10 @@ Button
 
 .button--red:hover {
     background-color: #c93131;
+}
+
+.button--download {
+    min-width: 280px;
 }
 
 /* 
@@ -349,6 +354,12 @@ Social
     display: flex;
 }
 
+.social--footer {
+    justify-content: center;
+}
+
+
+
 .social__item {
     display: flex;
     justify-content: center;
@@ -373,6 +384,16 @@ Social
     fill: #000000;
 }
 
+.social--footer .social__item {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+
 .social__icon {
     display: block;
 
@@ -383,6 +404,9 @@ Social
     transition: fill .1s linear;
 }
 
+.social--footer .social__icon {
+    fill: #fff;
+}
 
 /* 
 ==========================
@@ -440,4 +464,112 @@ Reviews
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+/* 
+==========================
+Download
+========================== 
+*/
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download__title {
+    font-size: 28px;
+    font-weight: 300;
+    color: #2d3033;
+
+    margin-bottom: 10px;
+}
+
+.download__text {
+    font-weight: bold;
+    font-size: 13px;
+    color: #2d3033;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+/* 
+==========================
+Footer
+========================== 
+*/
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer__inner {
+    padding: 70px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item {
+    width: 33%;
+    
+    padding: 0 15px;
+
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer__address p {
+    margin: 0;
+}
+
+.footer__address {
+    line-height: 1.5;
+    font-size: 14px;
+    font-style: normal;
+    color: #fff;
+    opacity: .5;
+}
+
+.footer__text {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #fff;
+    opacity: .5;
+}
+
+/* 
+==========================
+Copyright
+========================== 
+*/
+
+.copyright {
+    padding: 20px 0;
+
+    background-color: #313454;
+}
+
+.copyright__text {
+    text-align: center;
+    color: #808080;
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.copyright__author {
+    color: #fff;
+}
+
+.copyright__heart {
+    color: #e84545;
 }
