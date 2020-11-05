@@ -31,8 +31,9 @@ Container
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* 
@@ -209,7 +210,12 @@ Features
     line-height: 1.5;
 }
 
-/* Works */
+/* 
+==========================
+Works
+========================== 
+*/
+
 .works {
     display: flex;
     flex-wrap: wrap;
@@ -274,4 +280,164 @@ Features
 
 .works__item:hover .works__content {
     opacity: 0.9;
+}
+
+
+/* 
+==========================
+Team
+========================== 
+*/
+
+.team {
+    margin: 100px 0 70px;
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    margin-bottom: 20px;
+}
+
+.team__name {
+    font-size: 22px;
+    color: #2d3033;
+
+    margin-bottom: 8px;
+}
+
+.team__prof {
+    text-transform: uppercase;
+    color: #e84545;
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+.team__text {
+    margin-bottom: 20px;
+
+    color: #6c7279;
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+/* 
+==========================
+Social
+========================== 
+*/
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin-right: 4px;
+
+    background-color: #fff;
+    border: 1px solid #e8ecee;
+
+    transition: background .1s linear;
+}
+
+.social__item:hover {
+    background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+    fill: #000000;
+}
+
+.social__icon {
+    display: block;
+
+    height: 18px;
+
+    fill: #c6cacc;
+
+    transition: fill .1s linear;
+}
+
+
+/* 
+==========================
+Reviews
+========================== 
+*/
+
+.reviews {
+    overflow: hidden;
+
+    background-color: #53354a;
+}
+
+.reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.reviews__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.reviews__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    padding-left: 80px;
+}
+
+.reviews__text {
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.reviews__author {
+    margin-top: 25px;
+
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
